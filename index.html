@@ -127,6 +127,7 @@
           <ul class="team-items">
             <li class="team-list list-first">
               <img
+                srcset="./images/img-team-mark2x.jpg 2x, ./images/img-3.jpg 1x"
                 class="team-image"
                 src="./images/img-3.jpg"
                 alt="Mark"
@@ -187,6 +188,7 @@
             </li>
             <li class="team-list list-first">
               <img
+                srcset="./images/img-team-tom2x.jpg 2x, ./images/img-2.jpg 1x"
                 class="team-image"
                 src="./images/img-2.jpg"
                 alt="Tom"
@@ -247,6 +249,10 @@
             </li>
             <li class="team-list list-first">
               <img
+                srcset="
+                  ./images/img-team-camila2x.jpg 2x,
+                  ./images/img-1.jpg             1x
+                "
                 class="team-image"
                 src="./images/img-1.jpg"
                 alt="Camila"
@@ -307,6 +313,7 @@
             </li>
             <li class="team-list list-first">
               <img
+                srcset="./images/img-team-dan2x.jpg 2x, ./images/img.jpg 1x"
                 class="team-image"
                 src="./images/img.jpg"
                 alt="Daniel"
@@ -368,18 +375,25 @@
           </ul>
         </div>
       </section> -->
-      <!-- <section class="portfolio section">
+      <section class="portfolio section">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-items">
             <li class="portfolio-list">
               <div class="portfolio-cover-wrap">
-                <img
-                  class="portfolio-images"
-                  src="./images/portf-5.jpg"
-                  alt="BankingApp"
-                  width="360"
-                />
+                <!-- NEED TO DO SRCSET + OVERLAY -->
+                <picture>
+                  <source srcset="./images/img1-des2x.jpg 2x, ./images" />
+                  <source />
+                  <source />
+                  <img
+                    class="portfolio-images"
+                    src="./images/portf-5.jpg"
+                    alt="BankingApp"
+                    width="360"
+                  />
+                </picture>
+
                 <p class="portfolio-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -489,7 +503,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- <footer class="footer">
